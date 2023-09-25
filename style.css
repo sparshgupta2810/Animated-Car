@@ -1,0 +1,79 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    height: 80vh;
+    background: url('background.jpg') no-repeat center center/cover;
+    /* background-repeat: no-repeat; */
+    position: absolute;
+    
+}
+.trees{
+    width: 100%;
+    background: url('trees.png') no-repeat center center/cover;
+    height: 100vh;
+    bottom: 0px;
+
+    /* position: absolute; */
+    
+}
+.track{
+    width: 10000px;
+    background: url('track.png') no-repeat center center/cover;
+    height: 60vh;
+    top: 86vh;
+    position: absolute;
+    animation: track1 linear 4s infinite;
+   
+}
+.car{
+    width:280px;
+    background: url('car_body.png') no-repeat center center/cover;
+    background-size: cover;
+    height: 100px;
+    bottom: 24.5vh;
+    position: relative;
+    
+    
+}
+.wheel1{
+    width:60px;
+    background: url('car_wheel_left.png') no-repeat center center/cover;
+    background-size: cover;
+    height: 60px;
+    bottom: 33vh;
+    left: 10px;
+    position: relative;
+    animation: Sparsh linear .4s infinite;
+}
+.wheel2{
+    width:60px;
+    background: url('car_wheel_left.png') no-repeat center center/cover;
+    background-size: cover;
+    height: 60px;
+    bottom: 41vh;
+    left: 187px;
+    position: relative;
+    animation: Sparsh linear .4s infinite;
+}
+.Fullcar{
+    left: 100px;
+}
+@keyframes Sparsh {
+   100%{
+     transform: rotate(360deg);
+   }
+}
+@keyframes track1 {
+    
+    100%{
+        transform: translatex(-500vh);
+      }
+}
